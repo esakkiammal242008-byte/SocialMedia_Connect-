@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SocialConnect</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">
+<i class="fa-solid fa-globe"></i>
+SocialConnect
+</div>
+
+<div class="search-box">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Search posts, people, topics..."
+>
+
+</div>
+
+<div class="nav-menu">
+
+<a href="#">
+<i class="fa-solid fa-house"></i>
+Home
+</a>
+
+<a href="#">
+<i class="fa-solid fa-user-group"></i>
+Friends
+</a>
+
+<a href="#">
+<i class="fa-solid fa-message"></i>
+Messages
+</a>
+
+<a href="#">
+<i class="fa-solid fa-bell"></i>
+Notifications
+</a>
+
+<button id="darkModeBtn">
+🌙
+</button>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+Connect. Share. Inspire.
+</h1>
+
+<p>
+Join a vibrant community where ideas,
+stories, and creativity come together.
+</p>
+
+<button>
+Get Started
+</button>
+
+</div>
+
+</section>
+
+<!-- MAIN CONTAINER -->
+
+<div class="main-container">
+
+<!-- LEFT SIDEBAR -->
+
+<aside class="left-sidebar">
+
+<div class="profile-card">
+
+<img
+src="https://i.pravatar.cc/150?img=5"
+alt=""
+>
+
+<h2>John Doe</h2>
+
+<p>Frontend Developer</p>
+
+<div class="profile-stats">
+
+<div>
+<h3>120</h3>
+<span>Posts</span>
+</div>
+
+<div>
+<h3>5K</h3>
+<span>Followers</span>
+</div>
+
+<div>
+<h3>850</h3>
+<span>Following</span>
+</div>
+
+</div>
+
+</div>
+
+<div class="menu-card">
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li>🏠 Home</li>
+
+<li>👥 Friends</li>
+
+<li>🔖 Saved Posts</li>
+
+<li>📷 Photos</li>
+
+<li>🎥 Videos</li>
+
+<li>⚙ Settings</li>
+
+</ul>
+
+</div>
+
+</aside>
+
+<!-- CENTER FEED -->
+
+<main class="feed">
+
+<!-- STORIES -->
+
+<div class="stories">
+
+<div class="story add-story">
+➕ Add Story
+</div>
+
+<div class="story">
+Sarah
+</div>
+
+<div class="story">
+Emma
+</div>
+
+<div class="story">
+Mike
+</div>
+
+<div class="story">
+Alex
+</div>
+
+<div class="story">
+Sophia
+</div>
+
+</div>
+
+<!-- CREATE POST -->
+
+<div class="create-post">
+
+<h2>Create Post</h2>
+
+<textarea
+id="postInput"
+placeholder="What's on your mind today?"
+></textarea>
+
+<input
+type="file"
+id="imageInput"
+accept="image/*"
+>
+
+<div class="post-actions">
+
+<button onclick="createPost()">
+Post
+</button>
+
+<button>
+📷 Photo
+</button>
+
+<button>
+🎥 Video
+</button>
+
+</div>
+
+</div>
+
+<!-- POSTS SECTION -->
+
+<div id="posts">
+
+<!-- Dynamic Posts Here -->
+
+</div>
+
+</main>
+
+<!-- RIGHT SIDEBAR -->
+
+<aside class="right-sidebar">
+
+<!-- TRENDING -->
+
+<div class="card">
+
+<h3>🔥 Trending Topics</h3>
+
+<p>#CodeAlpha</p>
+
+<p>#WebDevelopment</p>
+
+<p>#JavaScript</p>
+
+<p>#Frontend</p>
+
+<p>#Programming</p>
+
+<p>#TechCommunity</p>
+
+</div>
+
+<!-- FRIEND SUGGESTIONS -->
+
+<div class="card">
+
+<h3>👥 People You May Know</h3>
+
+<div class="friend">
+
+<span>Sarah</span>
+
+<button>Follow</button>
+
+</div>
+
+<div class="friend">
+
+<span>Emma</span>
+
+<button>Follow</button>
+
+</div>
+
+<div class="friend">
+
+<span>Mike</span>
+
+<button>Follow</button>
+
+</div>
+
+<div class="friend">
+
+<span>Sophia</span>
+
+<button>Follow</button>
+
+</div>
+
+</div>
+
+<!-- NOTIFICATIONS -->
+
+<div class="card">
+
+<h3>🔔 Notifications</h3>
+
+<p>Emma liked your post.</p>
+
+<p>Sarah commented on your photo.</p>
+
+<p>Mike started following you.</p>
+
+<p>Your post reached 100 likes.</p>
+
+</div>
+
+<!-- ACHIEVEMENTS -->
+
+<div class="card">
+
+<h3>🏆 Achievements</h3>
+
+<p>⭐ Active Member</p>
+
+<p>🔥 Top Contributor</p>
+
+<p>🎖 Community Creator</p>
+
+</div>
+
+</aside>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-content">
+
+<h2>SocialConnect</h2>
+
+<p>
+Connecting people through ideas,
+stories, and creativity.
+</p>
+
+<p>
+© 2026 SocialConnect | CodeAlpha Internship Project
+</p>
+
+</div>
+
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
